@@ -61,5 +61,5 @@ form.addEventListener("submit", function (event) {
     akanName = femaleNames[correctedDay];
   }
 
-  result.textContent = `You were born on ${days[correctedDay]}. Your Akan name is ${akanName}.`;
+  result.textContent = `You were born on ${days[correctedDay]}. In Akan culture your name is  ${akanName}.`;
 });
