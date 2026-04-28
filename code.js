@@ -4,6 +4,12 @@ const result = document.querySelector("#result");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
+  if (day === "" || month === "" || year === "") {
+    alert("Please fill in all fields");
+    return;
+  }
+
+
   const day = Number(document.querySelector("#day").value);
   const month = Number(document.querySelector("#month").value);
   const year = Number(document.querySelector("#year").value);
