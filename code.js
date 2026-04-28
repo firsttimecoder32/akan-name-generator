@@ -8,7 +8,7 @@ form.addEventListener("submit", function (event) {
   const month = Number(document.querySelector("#month").value);
   const year = Number(document.querySelector("#year").value);
   const gender = document.querySelector("#gender").value;
-  
+
   if (day === "" || month === "" || year === "" || gender === "") {
     alert("Please fill in all fields.");
     return;
@@ -24,10 +24,14 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  if (year.length !== 4) {
+  const yearInput = document.querySelector("#year").value;
+
+  if (yearInput.length !== 4) {
     alert("Please enter a valid 4-digit year.");
     return;
   }
+
+  const year = Number(yearInput); // convert AFTER validation
 
   const CC = Math.floor(year / 100);
   const YY = year % 100;
