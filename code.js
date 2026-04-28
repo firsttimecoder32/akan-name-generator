@@ -3,11 +3,16 @@ const result = document.querySelector("#result");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
-  
+
   const day = Number(document.querySelector("#day").value);
   const month = Number(document.querySelector("#month").value);
   const year = Number(document.querySelector("#year").value);
   const gender = document.querySelector("#gender").value;
+
+  if (day === "" || month === "" || year === "" || gender === "") {
+    alert("Please fill in all fields.");
+    return;
+  }
 
   const CC = Math.floor(year / 100);
   const YY = year % 100;
@@ -24,7 +29,7 @@ form.addEventListener("submit", function (event) {
   const correctedDay = (dayOfTheWeek + 7) % 7;
 
   const days = [
-    "Sunday",   
+    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
