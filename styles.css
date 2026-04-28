@@ -1,110 +1,105 @@
-body{
-    background-color: white;
-    margin: 0;
-    padding: 0%;
-    color: black;
-    line-height:1.6;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
-
+body {
+  background-color: #f7f5f0;
+  margin: 0;
+  padding: 0%;
+  color: black;
+  line-height: 1.6;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-header{
-    background-color: hsl(43, 70%, 58%);
-    color: white;
-    padding: 35px 0;
-    text-align: center;
+header {
+  background-color: #8b1e1e;
+  color: white;
+  padding: 35px 0;
+  text-align: center;
 }
 
-header h1{
-    font-size: 40px;
-    margin: 0;
+header h1 {
+  font-size: 40px;
+  margin: 0;
 }
 
 .container {
-    max-width: 600px;
-    margin: 60px auto;
-    padding: 30px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
-    
 
-form{
-    max-width: 650px;
-    margin: 24px, auto;
-    align-items: center;
+.container p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 650px;
+  margin: 24px, auto;
+  align-items: center;
 }
 
 form label {
-    margin-bottom: 8px;
-    font-weight: 600;
-    color:hsl(43, 70%, 58%);
-    display: block;
-    margin-top: 10px;
-
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #8b1e1e;
+  display: block;
+  margin-top: 10px;
 }
 
-form input, form button{
-    width: 100%;
-    padding: 14px;
-    margin-bottom: 18px;
-    font-size: 20px;
-    border: 1px solid black;
-    border-radius: 8px;
+form input,
+form button {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 8px;
 }
 
-form input:focus{
-    border-color:hsl(43, 70%, 58%);
-    outline: none
+form input:focus {
+  border-color: #8b1e1e;
+  outline: none;
 }
 
-form button{
-    background-color: hsl(43, 70%, 58%);
-    color: white;
-    border: none;
-    font-size: 20px;
-    font-weight:600;
-    transition: background-color 0.3 ease;
-    cursor: pointer;
+form button {
+  background-color: #8b1e1e;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  transition: background-color 0.3 ease;
+  cursor: pointer;
 }
 
-form button:hover{
-    background-color: hwb(43 10% 27%);
+form button:hover {
+  background-color: #09401e;
 }
 
-form button:active{
-    background-color: hsl(43, 92%, 30%);
+form button:active {
+  background-color: #03210e
 }
 
 #result-container {
-    margin-top: 25px;
-    text-align: center;
+  margin-top: 25px;
+  text-align: center;
 }
 
 /* Header-like strip */
 #result-container h2 {
-    background-color: hsl(43, 70%, 58%);
-    color: white;
-    padding: 15px;
-    margin: 0;
-    font-size: 22px;
+  background-color: #8b1e1e;
+  color: white;
+  padding: 15px;
+  margin: 0;
+  font-size: 22px;
 }
 
 /* White box for result text */
 #result {
-    background: white;
-    padding: 20px;
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
-    border: 1px solid #ddd;
-    border-top: none; /* connects nicely to header */
+  background: #E9F5EE;
+  padding: 20px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid #ddd;
+  border-top: none; 
 }
-
-
-
-
-
-
-
