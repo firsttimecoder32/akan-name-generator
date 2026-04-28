@@ -8,9 +8,23 @@ form.addEventListener("submit", function (event) {
   const month = Number(document.querySelector("#month").value);
   const year = Number(document.querySelector("#year").value);
   const gender = document.querySelector("#gender").value;
-
   if (day === "" || month === "" || year === "" || gender === "") {
     alert("Please fill in all fields.");
+    return;
+  }
+
+  if (day < 1 || day > 31) {
+    alert("Day must be between 1 and 31.");
+    return;
+  }
+
+  if (month < 1 || month > 12) {
+    alert("Month must be between 1 and 12.");
+    return;
+  }
+
+  if (year.length !== 4) {
+    alert("Please enter a valid 4-digit year.");
     return;
   }
 
