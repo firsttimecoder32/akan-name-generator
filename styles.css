@@ -30,6 +30,7 @@ header h1 {
 .container p {
   text-align: center;
   margin-bottom: 20px;
+
 }
 
 form {
@@ -46,7 +47,16 @@ form label {
   margin-top: 10px;
 }
 
-form input,
+form input {
+  width: 100px;
+  padding: 14px;
+  margin-bottom: 18px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+}
+
 form button {
   width: 100%;
   padding: 14px;

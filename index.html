@@ -14,17 +14,22 @@
       <p>Enter your date of birth and gender to find your Akan name.</p>
 
       <form>
-        <label for="day">Day:</label>
-        <input type="number" id="day" />
-        <br /><br />
+        <div class="row">
+          <div>
+            <label for="day">Day:</label>
+            <input type="number" id="day" />
+          </div>
 
-        <label for="month">Month:</label>
-        <input type="number" id="month" />
-        <br /><br />
+          <div>
+            <label for="month">Month:</label>
+            <input type="number" id="month" />
+          </div>
 
-        <label for="year">Year:</label>
-        <input type="number" id="year" />
-        <br /><br />
+          <div>
+            <label for="year">Year:</label>
+            <input type="number" id="year" />
+          </div>
+        </div>
 
         <label for="gender">Gender:</label>
         <select id="gender">
@@ -32,7 +37,6 @@
           <option value="male">Male</option>
           <option value="female">Female</option>
         </select>
-        <br /><br />
 
         <!-- button -->
         <button type="submit">Get Akan Name</button>
