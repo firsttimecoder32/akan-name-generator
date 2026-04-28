@@ -101,3 +101,11 @@ form button:active {
   border: 1px solid #ddd;
   border-top: none;
 }
+
+footer {
+  background-color: #8b1e1e;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 600px;
+}
