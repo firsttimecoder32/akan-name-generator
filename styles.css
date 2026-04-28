@@ -76,7 +76,7 @@ form button:hover {
 }
 
 form button:active {
-  background-color: #03210e
+  background-color: #03210e;
 }
 
 #result-container {
@@ -84,7 +84,6 @@ form button:active {
   text-align: center;
 }
 
-/* Header-like strip */
 #result-container h2 {
   background-color: #8b1e1e;
   color: white;
@@ -93,13 +92,12 @@ form button:active {
   font-size: 22px;
 }
 
-/* White box for result text */
 #result {
-  background: #E9F5EE;
+  background: #e9f5ee;
   padding: 20px;
   margin: 0;
   font-size: 18px;
   font-weight: bold;
   border: 1px solid #ddd;
-  border-top: none; 
+  border-top: none;
 }
