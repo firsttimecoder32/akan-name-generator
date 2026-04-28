@@ -77,6 +77,33 @@ form button:active{
     background-color: hsl(43, 92%, 30%);
 }
 
+#result-container {
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* Header-like strip */
+#result-container h2 {
+    background-color: hsl(43, 70%, 58%);
+    color: white;
+    padding: 15px;
+    margin: 0;
+    font-size: 22px;
+}
+
+/* White box for result text */
+#result {
+    background: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-top: none; /* connects nicely to header */
+}
+
+
+
 
 
 
