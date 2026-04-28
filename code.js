@@ -8,6 +8,7 @@ form.addEventListener("submit", function (event) {
   const month = Number(document.querySelector("#month").value);
   const year = Number(document.querySelector("#year").value);
   const gender = document.querySelector("#gender").value;
+  
   if (day === "" || month === "" || year === "" || gender === "") {
     alert("Please fill in all fields.");
     return;
