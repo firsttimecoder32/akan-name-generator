@@ -10,7 +10,7 @@ form.addEventListener("submit", function (event) {
   const yearInput = document.querySelector("#year").value;
   const gender = document.querySelector("#gender").value;
 
-  // ✅ EMPTY CHECK (works now)
+  // EMPTY CHECK (works now)
   if (
     dayInput === "" ||
     monthInput === "" ||
@@ -26,7 +26,7 @@ form.addEventListener("submit", function (event) {
   const month = Number(monthInput);
   const year = Number(yearInput);
 
-  // ✅ VALIDATIONS
+  // VALIDATIONS
   if (day < 1 || day > 31) {
     alert("Day must be between 1 and 31.");
     return;
@@ -42,7 +42,7 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  // 👉 ADJUST JAN & FEB (important for formula)
+  // ADJUST JAN & FEB (important for formula)
   let adjustedMonth = month;
   let adjustedYear = year;
 
