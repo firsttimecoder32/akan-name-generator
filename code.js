@@ -4,16 +4,29 @@ const result = document.querySelector("#result");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  const day = Number(document.querySelector("#day").value);
-  const month = Number(document.querySelector("#month").value);
-  const year = Number(document.querySelector("#year").value);
+  // GET RAW VALUES FIRST (strings)
+  const dayInput = document.querySelector("#day").value;
+  const monthInput = document.querySelector("#month").value;
+  const yearInput = document.querySelector("#year").value;
   const gender = document.querySelector("#gender").value;
 
-  if (day === "" || month === "" || year === "" || gender === "") {
+  // ✅ EMPTY CHECK (works now)
+  if (
+    dayInput === "" ||
+    monthInput === "" ||
+    yearInput === "" ||
+    gender === ""
+  ) {
     alert("Please fill in all fields.");
     return;
   }
 
+  // CONVERT AFTER VALIDATION
+  const day = Number(dayInput);
+  const month = Number(monthInput);
+  const year = Number(yearInput);
+
+  // ✅ VALIDATIONS
   if (day < 1 || day > 31) {
     alert("Day must be between 1 and 31.");
     return;
@@ -24,24 +37,29 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  const yearInput = document.querySelector("#year").value;
-
   if (yearInput.length !== 4) {
     alert("Please enter a valid 4-digit year.");
     return;
   }
 
-  const year = Number(yearInput); // convert AFTER validation
+  // 👉 ADJUST JAN & FEB (important for formula)
+  let adjustedMonth = month;
+  let adjustedYear = year;
 
-  const CC = Math.floor(year / 100);
-  const YY = year % 100;
+  if (month === 1 || month === 2) {
+    adjustedMonth = month + 12;
+    adjustedYear = year - 1;
+  }
+
+  const CC = Math.floor(adjustedYear / 100);
+  const YY = adjustedYear % 100;
 
   const dayOfTheWeek =
     (Math.floor(CC / 4) -
       2 * CC -
       1 +
       Math.floor((5 * YY) / 4) +
-      Math.floor((26 * (month + 1)) / 10) +
+      Math.floor((26 * (adjustedMonth + 1)) / 10) +
       day) %
     7;
 
@@ -85,5 +103,5 @@ form.addEventListener("submit", function (event) {
     akanName = femaleNames[correctedDay];
   }
 
-  result.textContent = `You were born on ${days[correctedDay]}. In Akan culture your name is  ${akanName}.`;
+  result.textContent = `You were born on ${days[correctedDay]}. In Akan culture your name is ${akanName}.`;
 });
