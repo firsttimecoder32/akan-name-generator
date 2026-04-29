@@ -1,6 +1,9 @@
 const form = document.querySelector("form");
 const result = document.querySelector("#result");
 
+const form = document.querySelector("form");
+const result = document.querySelector("#result");
+
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
