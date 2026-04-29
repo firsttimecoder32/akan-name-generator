@@ -61,4 +61,4 @@ Warda Haithar
 
 ## License
 
-© Warda Haithar 2026. This project is for educational purposes only.
+© Warda Haithar 2026. 
