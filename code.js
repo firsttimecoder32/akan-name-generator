@@ -61,7 +61,7 @@ form.addEventListener("submit", function (event) {
       Math.floor((5 * YY) / 4) +
       Math.floor((26 * (adjustedMonth + 1)) / 10) +
       day) %
-    7;
+      7;
 
   const correctedDay = (dayOfTheWeek + 7) % 7;
 
